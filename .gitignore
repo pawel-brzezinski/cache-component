@@ -1,0 +1,17 @@
+# IDE
+/.idea
+
+# Composer
+/composer.lock
+/vendor
+
+# System files
+.DS_Store
+
+# Tests
+/.phpunit.result.cache
+/infection.json
+/phpunit.xml
+/tests/coverage
+/tests/infection
+/tests/metrics

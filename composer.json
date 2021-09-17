@@ -1,0 +1,36 @@
+{
+    "name": "pawel-brzezinski/cache-component",
+    "description": "Extension based on Symfony Cache Component.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paweł Brzeziński",
+            "email": "pawel.brzezinski@smartint.pl"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "beberlei/assert": "^3.3",
+        "symfony/cache": "^5.3"
+    },
+    "require-dev": {
+        "keyvanakbary/mimic": "^1.0",
+        "phpmetrics/phpmetrics": "^2.7",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpstan/phpstan": "^0.12.98",
+        "phpunit/phpunit": "^9.5"
+    },
+    "suggest": {},
+    "autoload": {
+        "psr-4": {
+            "PB\\Component\\Cache\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PB\\Component\\Cache\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
