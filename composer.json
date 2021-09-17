@@ -16,12 +16,16 @@
     },
     "require-dev": {
         "keyvanakbary/mimic": "^1.0",
+        "pawel-brzezinski/cqrs-component": "dev-main",
+        "pawel-brzezinski/first-aid-component": "dev-main",
         "phpmetrics/phpmetrics": "^2.7",
         "phpspec/prophecy-phpunit": "^2.0",
         "phpstan/phpstan": "^0.12.98",
         "phpunit/phpunit": "^9.5"
     },
-    "suggest": {},
+    "suggest": {
+        "pawel-brzezinski/cqrs-component": "Nedded to use CQRS cache interfaces, and message bus middlewares."
+    },
     "autoload": {
         "psr-4": {
             "PB\\Component\\Cache\\": "src/"
@@ -32,5 +36,5 @@
             "PB\\Component\\Cache\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
