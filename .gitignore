@@ -12,6 +12,7 @@
 /.phpunit.result.cache
 /infection.json
 /phpunit.xml
+/tests/.env.*.local
 /tests/coverage
 /tests/infection
 /tests/metrics
