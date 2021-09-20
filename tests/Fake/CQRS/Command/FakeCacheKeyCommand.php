@@ -9,13 +9,13 @@ use PB\Component\Cache\CQRS\Command\CacheKeyCommandInterface;
 /**
  * @author Paweł Brzeziński <pawel.brzezinski@smartint.pl>
  */
-final class FakeCacheKeyCommand implements CacheKeyCommandInterface
+final class FakeCacheKeyCommand extends FakeCommand implements CacheKeyCommandInterface
 {
     /**
      * {@inheritDoc}
      */
     public function cacheKey(): string
     {
-        return 'fake.cache_key.command';
+        return 'fake.cache_key.command.id.'.$this->id;
     }
 }

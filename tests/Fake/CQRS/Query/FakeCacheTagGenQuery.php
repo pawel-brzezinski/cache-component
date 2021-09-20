@@ -32,7 +32,7 @@ final class FakeCacheTagGenQuery extends FakeQuery implements CacheableQueryInte
      */
     public function cacheTags(): array
     {
-        return [];
+        return ['custom-tag-1'];
     }
 
     /**
