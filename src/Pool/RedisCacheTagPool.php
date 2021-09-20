@@ -11,8 +11,6 @@ use Symfony\Component\Cache\Adapter\{RedisAdapter, RedisTagAwareAdapter};
  */
 class RedisCacheTagPool extends RedisCachePool implements CacheTagPoolInterface
 {
-    private RedisTagAwareAdapter $adapter;
-
     /**
      * {@inheritDoc}
      */

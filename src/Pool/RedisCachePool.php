@@ -4,14 +4,15 @@ declare(strict_types=1);
 
 namespace PB\Component\Cache\Pool;
 
-use Symfony\Component\Cache\Adapter\RedisAdapter;
+use Symfony\Component\Cache\Adapter\{RedisAdapter, RedisTagAwareAdapter};
 
 /**
  * @author Paweł Brzeziński <pawel.brzezinski@smartint.pl>
  */
 class RedisCachePool implements CachePoolInterface
 {
-    private RedisAdapter $adapter;
+    /** @var RedisAdapter|RedisTagAwareAdapter */
+    protected $adapter;
 
     /**
      * @param string $redisDsn
