@@ -21,12 +21,4 @@ final class FakeCacheTagCommand extends FakeCommand implements CacheTagCommandIn
             'custom-tag-2',
         ];
     }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function cacheTagGenerator(): ?string
-    {
-        return null;
-    }
 }

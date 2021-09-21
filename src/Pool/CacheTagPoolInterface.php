@@ -17,6 +17,8 @@ interface CacheTagPoolInterface extends CachePoolInterface
      * @return bool
      *
      * @throws InvalidArgumentException
+     *
+     * @phpstan-ignore-next-line
      */
     public function invalidateTags(array $tags): bool;
 }

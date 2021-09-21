@@ -12,6 +12,7 @@ use PB\Component\Cache\Tests\TestCase\SymfonyMessengerMiddlewareTestCase;
 use PB\Component\CQRS\Tests\TestComponent\Messenger\EnvelopeTestTrait;
 use Prophecy\Argument;
 use Prophecy\Prophecy\MethodProphecy;
+use Psr\Cache\InvalidArgumentException;
 use Symfony\Component\Messenger\Envelope;
 
 /**
@@ -56,6 +57,10 @@ final class InvalidateCacheTagsMiddlewareTest extends SymfonyMessengerMiddleware
      * @param object $message
      * @param Envelope $envelope
      * @param array $cacheTags
+     *
+     * @throws InvalidArgumentException
+     *
+     * @phpstan-ignore-next-line
      */
     public function testShouldCallHandleMethodAndCheckIfMessageCacheTagsHasBeenInvalidated(
         object $message,

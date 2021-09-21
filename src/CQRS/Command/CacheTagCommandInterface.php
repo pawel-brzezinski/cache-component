@@ -19,11 +19,4 @@ interface CacheTagCommandInterface extends CommandInterface
      * @return string[]
      */
     public function cacheTags(): array;
-
-    /**
-     * Returns cache tag generator id. Supported by TagAwareCacheInterface adapters.
-     *
-     * @return string|null
-     */
-    public function cacheTagGenerator(): ?string;
 }
